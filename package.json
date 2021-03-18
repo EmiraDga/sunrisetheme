@@ -1,0 +1,17 @@
+{
+  "name": "sunrise-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass stylesheets/style.scss /style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "compass": "^0.1.1"
+  }
+}
