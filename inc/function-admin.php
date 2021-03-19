@@ -138,14 +138,14 @@ function  sunrise_sidebar_description(){
 
 
 
-//add_action('admin_head', 'my_custom_fonts');
-
-//function my_custom_fonts() {
-  //echo '<style>
-    #wpbody{
-    //border: 2px solid red;
-    //}
 
 
-  //</style>';
-//}
+function my_custom_css() {
+
+    wp_register_style('styleheet',get_stylesheet_uri(), [] , fileatime(get_template_directory(). '/css/stylesheet.css'), 'all');
+    
+    wp_enqueue_style('styleheet');
+    
+    }
+    add_action('wp_enqueue_scripts', 'my_custom_css');
+    
