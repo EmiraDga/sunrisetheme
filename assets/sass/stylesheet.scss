@@ -1,0 +1,35 @@
+$text-color: #333 !default; // very dark grey
+$link-color: #3f5ee4 !default; // blue
+$accent-color: #48bb8b !default; // green
+$border-color: #d4d4d4 !default; // light grey
+
+body {
+  color: $text-color;
+}
+
+a {
+  color: $link-color;
+  border-bottom: 1px solid $link-color;
+
+  &:hover {
+    color: $accent-color;
+    border-bottom: 1px solid $accent-color;
+  }
+}
+
+
+input,
+textarea {
+  border: 1px solid $border-color;
+}
+
+
+button,
+input[type="submit"] {
+  border: 1px solid $accent-color;
+  background-color: $accent-color;
+}
+
+.sidebar {
+  // Our sidebar will not have any background color by default
+}

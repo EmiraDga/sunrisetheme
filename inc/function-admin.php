@@ -142,10 +142,16 @@ function  sunrise_sidebar_description(){
 
 function my_custom_css() {
 
-    wp_register_style('styleheet',get_stylesheet_uri(), [] , fileatime(get_template_directory(). '/css/stylesheet.css'), 'all');
+    wp_register_style('styleheet',get_stylesheet_uri(), [] , get_template_directory(). '/css/stylesheet.css', 'all');
     
     wp_enqueue_style('styleheet');
     
     }
-    add_action('wp_enqueue_scripts', 'my_custom_css');
+    add_action('admin_enqueue_scripts', 'my_custom_css');
     
+
+    function theme_customize_register( $wp_customize ) {
+        // All our settings will go here
+     }
+     
+     add_action( 'customize_register', 'theme_customize_register' );

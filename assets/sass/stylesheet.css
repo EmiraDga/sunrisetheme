@@ -1,0 +1,25 @@
+body {
+  color: #333;
+}
+
+a {
+  color: #3f5ee4;
+  border-bottom: 1px solid #3f5ee4;
+}
+
+a:hover {
+  color: #48bb8b;
+  border-bottom: 1px solid #48bb8b;
+}
+
+input,
+textarea {
+  border: 1px solid #d4d4d4;
+}
+
+button,
+input[type="submit"] {
+  border: 1px solid #48bb8b;
+  background-color: #48bb8b;
+}
+/*# sourceMappingURL=stylesheet.css.map */
